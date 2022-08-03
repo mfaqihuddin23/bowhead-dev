@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  @font-face {
+    font-family: Axiforma;
+    font-weight: 300;
+    src: url(/assets/fonts/Axiforma/Axiforma-Book.woff) format("woff");
+  }
+  @font-face {
+    font-family: Axiforma;
+    font-weight: 400;
+    src: url(/assets/fonts/Axiforma/Axiforma-Regular.woff) format("woff");
+  }
+  @font-face {
+    font-family: Axiforma;
+    font-weight: 500;
+    src: url(/assets/fonts/Axiforma/Axiforma-Medium.woff) format("woff");
+  }
+  @font-face {
+    font-family: Axiforma;
+    font-weight: 600;
+    src: url(/assets/fonts/Axiforma/Axiforma-SemiBold.woff) format("woff");
+  }
+  @font-face {
+    font-family: Axiforma;
+    font-weight: 700;
+    src: url(/assets/fonts/Axiforma/Axiforma-Bold.woff) format("woff");
+  }
+  @font-face {
+    font-family: Axiforma;
+    font-weight: 800;
+    src: url(/assets/fonts/Axiforma/Axiforma-ExtraBold.woff) format("woff");
+  }
+
+  body{
+    background: url('../images/bg-header.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    font-family: Axiforma;
+  }
+
+  /* typography */
+  /* 700 */
+  h1{
+    font-size:42px;
+    line-height: 150%;
+  }
+  /* 800 */
+  h2{
+    font-size: 40px;
+    line-height: 170%;
+  }
+  /* 700 */
+  h3{
+    font-size: 40px;
+    line-height: 150%;
+  }
+  /* 600 */
+  h4{
+    font-size: 20px;
+    line-height: 150%;
+  }
+  /* 600 */
+  h5{
+    font-size: 18px;
+    line-height: 170%;
+  }
+  h6{}
+
+  /* 400 */
+  .body-1{
+    font-size: 20px;
+    line-height: 150%;
+  }
+  .body-2{
+    font-size: 16px;
+    line-height: 170%;
+  }
+  .label-1{
+    font-size: 16px;
+  line-height: 150%;
+  }
+  .label-2{
+    font-size: 14px;
+    line-height: 170%;
+  }
+  /* 300 */
+  .label-3{
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  
+}
+
+@layer components{
+  
+}
+
+@layer utilities{
+  
+}
+
+section.hero .text-wrap{
+  max-width: 686px;
+}
+section.hero .body-2{
+  max-width: 387px;
+}
+
+.box-owner{
+  box-shadow: 0px 38px 55px -19px rgba(0, 0, 0, 0.09);
+}
