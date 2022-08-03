@@ -112,5 +112,9 @@ section.hero .body-2{
 }
 
 .box-owner{
+  max-width: 119px;
   box-shadow: 0px 38px 55px -19px rgba(0, 0, 0, 0.09);
+}
+.wrap-box{
+  max-width: 225px;
 }
