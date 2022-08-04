@@ -134,3 +134,6 @@ section.hero .body-2{
   box-shadow: 0px 120px 89px -38px rgba(0, 0, 0, 0.04);
   border-radius: 48px;
 }
+section.footer .label-1{
+  line-height: 246.5%;
+}
