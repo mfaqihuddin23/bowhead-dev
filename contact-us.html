@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/assets/css/styles.css" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+  <nav class=" px-2 sm:px-4 py-12 rounded mb-14">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+      <a href="#" class="flex items-center">
+          <img src="/assets/images/logo-nav.png" class="mr-3 h-6 sm:h-9" alt="Bowhead Logo">
+          <!-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_23_19)">
+          <path d="M9 7.19999C9 6.20592 9.80592 5.39999 10.8 5.39999H34.2C35.1941 5.39999 36 6.20592 36 7.19999C36 8.19407 35.1941 8.99999 34.2 8.99999H10.8C9.80592 8.99999 9 8.194 9 7.19999ZM34.2 16.2H1.8C0.805922 16.2 0 17.006 0 18C0 18.9941 0.805922 19.8 1.8 19.8H34.2C35.1941 19.8 36 18.9941 36 18C36 17.006 35.1941 16.2 34.2 16.2ZM34.2 27H18C17.006 27 16.2 27.8059 16.2 28.8C16.2 29.794 17.006 30.6 18 30.6H34.2C35.1941 30.6 36 29.794 36 28.8C36 27.8059 35.1941 27 34.2 27Z" fill="white"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_23_19">
+          <rect width="36" height="36" fill="white"/>
+          </clipPath>
+          </defs>
+          </svg>
+          
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="flex flex-col p-4 mt-4 rounded-lg border md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
+          <!-- <li>
+            <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+          </li> -->
+          <li>
+            <div class="">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="text-white font-normal border rounded-full text-sm px-12 py-4 text-center">
+                About
+              </a>
+            </div>
+            <!-- <button type="button" class="text-white font-normal border rounded-full text-sm px-12 py-3 text-center">About</button> -->
+          </li>
+          <li>
+            <div class="">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="px-12 py-4 text-sm font-normal text-white rounded-full bg-gradient-to-r from-[#FCD25C] to-[#FF9A66]">
+                Contact
+              </a>
+            </div>
+            <!-- <button type="button" class="px-12 py-3 text-sm font-normal text-white rounded-full bg-gradient-to-r from-[#FCD25C] to-[#FF9A66]
+            ">Contact</button> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <section class="contact-us">
+    <div class="container">
+      <div class="flex">
+        <div class="w-6/12 mr-14">
+          <form>
+            <div class="relative z-0 mb-6 w-full group">
+                <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="">
+                <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+            </div>
+            <div class="relative z-0 mb-6 w-full group">
+                <input type="password" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="">
+                <label for="floating_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
+            </div>
+            <div class="relative z-0 mb-6 w-full group">
+                <input type="password" name="repeat_password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="">
+                <label for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm password</label>
+            </div>
+            <div class="grid md:grid-cols-2 md:gap-6">
+              <div class="relative z-0 mb-6 w-full group">
+                  <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="">
+                  <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+              </div>
+              <div class="relative z-0 mb-6 w-full group">
+                  <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="">
+                  <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 md:gap-6">
+              <div class="relative z-0 mb-6 w-full group">
+                  <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="">
+                  <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
+              </div>
+              <div class="relative z-0 mb-6 w-full group">
+                  <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required="">
+                  <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company (Ex. Google)</label>
+              </div>
+            </div>
+            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+          </form>
+        </div>
+        <div class="w-6/12 h-full ">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d909.6995501621521!2d-75.8822451769573!3d45.31050410954371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccdff95686bcbc1%3A0xdaeb1dc13e0f6c49!2s120%20Barrow%20Crescent%2C%20Kanata%2C%20ON%20K2L%202K1%2C%20Canada!5e0!3m2!1sen!2sid!4v1659948181416!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="our-location">
+    <div class="container">
+      
+    </div>
+  </section>
+
+
+  <script src="/node_modules/flowbite/dist/flowbite.js"></script>
+</body>
+</html>

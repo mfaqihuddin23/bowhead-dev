@@ -153,3 +153,13 @@ section.our-story .text-wrap{
 .values-shadow{
   box-shadow: 0px 38px 55px -19px rgba(0, 0, 0, 0.09);
 }
+
+section.security .text-wrap{
+  max-width: 466px;
+}
+section.internal .text-wrap{
+  max-width: 559px;
+}
+section.join .text-wrap{
+  /* max-width: 466px; */
+}
