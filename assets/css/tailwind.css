@@ -81,7 +81,7 @@
   }
   .label-1{
     font-size: 16px;
-  line-height: 150%;
+    line-height: 150%;
   }
   .label-2{
     font-size: 14px;
@@ -162,4 +162,7 @@ section.internal .text-wrap{
 }
 section.join .text-wrap{
   /* max-width: 466px; */
+}
+.iti{
+  width: 100%;
 }
