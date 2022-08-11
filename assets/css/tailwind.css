@@ -45,12 +45,12 @@
   /* typography */
   /* 700 */
   h1{
-    font-size:42px;
+    font-size:24px;
     line-height: 150%;
   }
   /* 800 */
   h2{
-    font-size: 40px;
+    font-size: 24px;
     line-height: 150%;
   }
   /* 700 */
@@ -68,15 +68,18 @@
     font-size: 18px;
     line-height: 170%;
   }
-  h6{}
+  h6{
+    font-size: 16px;
+    line-height: 170%;
+  }
 
   /* 400 */
   .body-1{
-    font-size: 20px;
+    font-size: 14px;
     line-height: 150%;
   }
   .body-2{
-    font-size: 16px;
+    font-size: 14px;
     line-height: 170%;
   }
   .label-1{
@@ -89,11 +92,77 @@
   }
   /* 300 */
   .label-3{
-    font-size: 18px;
+    font-size: 14px;
     line-height: 150%;
   }
 
+  section.hero{
+    background: url('../images/bg-header.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  section.hero .text-wrap{
+    max-width: 686px;
+  }
+  section.hero .body-2{
+    max-width: 387px;
+  }
   
+  .box-owner{
+    max-width: 119px;
+    box-shadow: 0px 38px 55px -19px rgba(0, 0, 0, 0.09);
+  }
+  .wrap-box{
+    max-width: 225px;
+  }
+  .fund-wrap{
+    background: linear-gradient(135.34deg, #61D5DB 1.86%, #3CB2B8 98.15%);
+    box-shadow: 0px 120px 89px -38px rgba(0, 0, 0, 0.11);
+    border-radius: 48px;
+  }
+  .story-wrap{
+    background: linear-gradient(135.34deg, #FFFFFF 1.86%, #FFFFFF 98.15%);
+    box-shadow: 0px 38px 120px -15px #D9DDE4;
+    border-radius: 30px;
+    max-width: 367px;
+  }
+  .empower-wrap{
+    background: linear-gradient(135.34deg, #FFFFFF 1.86%, #FFFFFF 98.15%);
+    box-shadow: 0px 120px 89px -38px rgba(0, 0, 0, 0.04);
+    border-radius: 48px;
+  }
+  section.footer .label-1{
+    line-height: 246.5%;
+  }
+  
+  
+  section.about .img-shadow{
+    box-shadow: 0px 80px 137px -32px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+  }
+  .whale{
+    bottom: -22%;
+    left: -2%;
+  }
+  section.our-story .text-wrap{
+    max-width: 1115px;
+  }
+  .values-shadow{
+    box-shadow: 0px 38px 55px -19px rgba(0, 0, 0, 0.09);
+  }
+  
+  section.security .text-wrap{
+    max-width: 466px;
+  }
+  section.internal .text-wrap{
+    max-width: 559px;
+  }
+  section.join .text-wrap{
+    /* max-width: 466px; */
+  }
+  .iti{
+    width: 100%;
+  }
 }
 
 @layer components{
@@ -104,65 +173,68 @@
   
 }
 
-section.hero .text-wrap{
-  max-width: 686px;
-}
-section.hero .body-2{
-  max-width: 387px;
+section.hero .anim{
+  /* margin-right: -15%; */
 }
 
-.box-owner{
-  max-width: 119px;
-  box-shadow: 0px 38px 55px -19px rgba(0, 0, 0, 0.09);
+.container{
+  width: 90%;
 }
-.wrap-box{
-  max-width: 225px;
+@media (min-width: 640px) { 
+  
 }
-.fund-wrap{
-  background: linear-gradient(135.34deg, #61D5DB 1.86%, #3CB2B8 98.15%);
-  box-shadow: 0px 120px 89px -38px rgba(0, 0, 0, 0.11);
-  border-radius: 48px;
+@media (min-width: 768px) { 
+  
 }
-.story-wrap{
-  background: linear-gradient(135.34deg, #FFFFFF 1.86%, #FFFFFF 98.15%);
-  box-shadow: 0px 38px 120px -15px #D9DDE4;
-  border-radius: 30px;
-  max-width: 367px;
-}
-.empower-wrap{
-  background: linear-gradient(135.34deg, #FFFFFF 1.86%, #FFFFFF 98.15%);
-  box-shadow: 0px 120px 89px -38px rgba(0, 0, 0, 0.04);
-  border-radius: 48px;
-}
-section.footer .label-1{
-  line-height: 246.5%;
-}
+@media (min-width: 1024px) { 
+  /* typography */
+  /* 700 */
+  h1{
+    font-size:42px;
+  }
+  /* 800 */
+  h2{
+    font-size: 40px;
+  }
+  /* 700 */
+  h3{
+    font-size: 24px;
+  }
+  /* 600 */
+  h4{
+    font-size: 20px;
+  }
+  /* 600 */
+  h5{
+    font-size: 18px;
+  }
+  h6{}
 
+  /* 400 */
+  .body-1{
+    font-size: 20px;
+  }
+  .body-2{
+    font-size: 16px;
+  }
+  .label-1{
+    font-size: 16px;
+  }
+  .label-2{
+    font-size: 14px;
+  }
+  /* 300 */
+  .label-3{
+    font-size: 18px;
+  }
 
-section.about .img-shadow{
-  box-shadow: 0px 80px 137px -32px rgba(0, 0, 0, 0.25);
-  border-radius: 25px;
+  .box-owner{
+    max-width: 99px;
+  }
 }
-.whale{
-  bottom: -22%;
-  left: -2%;
-}
-section.our-story .text-wrap{
-  max-width: 1115px;
-}
-.values-shadow{
-  box-shadow: 0px 38px 55px -19px rgba(0, 0, 0, 0.09);
-}
-
-section.security .text-wrap{
-  max-width: 466px;
-}
-section.internal .text-wrap{
-  max-width: 559px;
-}
-section.join .text-wrap{
-  /* max-width: 466px; */
-}
-.iti{
-  width: 100%;
+@media (min-width: 1280px) { 
+  .container{
+    width: 100%;
+    max-width: 1137px;
+  }
 }
