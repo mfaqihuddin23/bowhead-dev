@@ -1011,9 +1011,9 @@ input:checked + .toggle-bg {
 }
 
 body{
-  background: url('../images/bg-header.svg');
-  background-position: top center;
-  background-repeat: no-repeat;
+  /* background: url('../images/bg-header.svg');
+    background-position: top center;
+    background-repeat: no-repeat; */
   font-family: Axiforma;
 }
 
@@ -1356,6 +1356,10 @@ h6{
 
 .z-30 {
   z-index: 30;
+}
+
+.-z-20 {
+  z-index: -20;
 }
 
 .mx-auto {
@@ -1895,6 +1899,10 @@ h6{
 
 .to-\[\#FF9A66\] {
   --tw-gradient-to: #FF9A66;
+}
+
+.bg-top {
+  background-position: top;
 }
 
 .p-2 {

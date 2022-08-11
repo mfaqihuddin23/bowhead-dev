@@ -35,9 +35,9 @@
   }
 
   body{
-    background: url('../images/bg-header.svg');
+    /* background: url('../images/bg-header.svg');
     background-position: top center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 
     font-family: Axiforma;
   }
