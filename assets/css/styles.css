@@ -1102,6 +1102,12 @@ section.hero .body-2{
   max-width: 387px;
 }
 
+section.privacy-owner{
+  background: url('../images/bg-mid.svg');
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
 .box-owner{
   max-width: 99px;
   box-shadow: 0px 38px 55px -19px rgba(0, 0, 0, 0.09);
@@ -1128,6 +1134,12 @@ section.hero .body-2{
   background: linear-gradient(135.34deg, #FFFFFF 1.86%, #FFFFFF 98.15%);
   box-shadow: 0px 120px 89px -38px rgba(0, 0, 0, 0.04);
   border-radius: 48px;
+}
+
+section.footer{
+  background: url('../images/bg-bottom.svg');
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 section.footer .label-1{
@@ -1396,12 +1408,12 @@ section.join .text-wrap{
   top: 0px;
 }
 
-.left-0 {
-  left: 0px;
-}
-
 .bottom-0 {
   bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .bottom-\[60px\] {
@@ -1602,10 +1614,6 @@ section.join .text-wrap{
   margin-left: 0px;
 }
 
-.mr-14 {
-  margin-right: 3.5rem;
-}
-
 .mt-9 {
   margin-top: 2.25rem;
 }
@@ -1686,6 +1694,10 @@ section.join .text-wrap{
   width: 33.333333%;
 }
 
+.w-11\/12 {
+  width: 91.666667%;
+}
+
 .w-max {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -1706,10 +1718,6 @@ section.join .text-wrap{
 
 .w-4 {
   width: 1rem;
-}
-
-.w-11\/12 {
-  width: 91.666667%;
 }
 
 .flex-1 {
@@ -2037,16 +2045,12 @@ section.join .text-wrap{
   padding: 1.75rem;
 }
 
-.p-9 {
-  padding: 2.25rem;
+.p-6 {
+  padding: 1.5rem;
 }
 
 .p-1 {
   padding: 0.25rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
 }
 
 .px-2 {
@@ -2104,6 +2108,11 @@ section.join .text-wrap{
   padding-right: 2.25rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .py-2\.5 {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
@@ -2112,11 +2121,6 @@ section.join .text-wrap{
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .pr-4 {
@@ -2129,6 +2133,10 @@ section.join .text-wrap{
 
 .pr-14 {
   padding-right: 3.5rem;
+}
+
+.pb-14 {
+  padding-bottom: 3.5rem;
 }
 
 .pt-2 {

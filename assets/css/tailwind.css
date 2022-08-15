@@ -108,6 +108,11 @@
     max-width: 387px;
   }
   
+  section.privacy-owner{
+    background: url('../images/bg-mid.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
   .box-owner{
     max-width: 99px;
     box-shadow: 0px 38px 55px -19px rgba(0, 0, 0, 0.09);
@@ -130,6 +135,11 @@
     background: linear-gradient(135.34deg, #FFFFFF 1.86%, #FFFFFF 98.15%);
     box-shadow: 0px 120px 89px -38px rgba(0, 0, 0, 0.04);
     border-radius: 48px;
+  }
+  section.footer{
+    background: url('../images/bg-bottom.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
   }
   section.footer .label-1{
     line-height: 246.5%;
