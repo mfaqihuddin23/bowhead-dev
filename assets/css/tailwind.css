@@ -60,7 +60,7 @@
   }
   /* 600 */
   h4{
-    font-size: 20px;
+    font-size: 14px;
     line-height: 150%;
   }
   /* 600 */
@@ -109,11 +109,11 @@
   }
   
   .box-owner{
-    max-width: 119px;
+    max-width: 99px;
     box-shadow: 0px 38px 55px -19px rgba(0, 0, 0, 0.09);
   }
   .wrap-box{
-    max-width: 225px;
+    max-width: 111px;
   }
   .fund-wrap{
     background: linear-gradient(135.34deg, #61D5DB 1.86%, #3CB2B8 98.15%);
@@ -229,7 +229,10 @@ section.hero .anim{
   }
 
   .box-owner{
-    max-width: 99px;
+    max-width: 119px;
+  }
+  .wrap-box{
+    max-width: 225px;
   }
 }
 @media (min-width: 1280px) { 
