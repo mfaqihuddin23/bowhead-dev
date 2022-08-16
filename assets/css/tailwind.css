@@ -145,14 +145,24 @@
     line-height: 246.5%;
   }
   
+  .swiper{
+    width: auto;
+    height: auto;
+  }
+  
   section.about{
     background: url('../images/bg-header.svg');
-    background-position: top center;
+    background-position: top left;
     background-repeat: no-repeat;
   }
   section.about .img-shadow{
-    box-shadow: 0px 80px 137px -32px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0px 80px 137px -32px rgba(0, 0, 0, 0.25); */
     border-radius: 25px;
+  }
+  .body-about{
+    background: url('../images/bg-bottom-alt.svg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
   }
   .whale{
     bottom: -22%;
@@ -165,6 +175,16 @@
     box-shadow: 0px 38px 55px -19px rgba(0, 0, 0, 0.09);
   }
   
+  .swiperteam .swiper-slide{
+    width: max-content;
+  }
+  .swiperlogo .swiper-slide{
+    width: max-content;
+  }
+  .ourteam{
+    max-width:271px;
+  }
+
   section.security .text-wrap{
     max-width: 466px;
   }
@@ -247,6 +267,11 @@ section.hero .anim{
   }
   .wrap-box{
     max-width: 225px;
+  }
+
+  section.about .img-shadow{
+    box-shadow: 0px 80px 137px -32px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
   }
 }
 @media (min-width: 1280px) { 

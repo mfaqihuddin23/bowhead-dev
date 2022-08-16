@@ -1146,15 +1146,26 @@ section.footer .label-1{
   line-height: 246.5%;
 }
 
+.swiper{
+  width: auto;
+  height: auto;
+}
+
 section.about{
   background: url('../images/bg-header.svg');
-  background-position: top center;
+  background-position: top left;
   background-repeat: no-repeat;
 }
 
 section.about .img-shadow{
-  box-shadow: 0px 80px 137px -32px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0px 80px 137px -32px rgba(0, 0, 0, 0.25); */
   border-radius: 25px;
+}
+
+.body-about{
+  background: url('../images/bg-bottom-alt.svg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
 }
 
 .whale{
@@ -1168,6 +1179,22 @@ section.our-story .text-wrap{
 
 .values-shadow{
   box-shadow: 0px 38px 55px -19px rgba(0, 0, 0, 0.09);
+}
+
+.swiperteam .swiper-slide{
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.swiperlogo .swiper-slide{
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.ourteam{
+  max-width:271px;
 }
 
 section.security .text-wrap{
@@ -1414,10 +1441,6 @@ section.join .text-wrap{
   top: 0px;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
 .left-0 {
   left: 0px;
 }
@@ -1428,6 +1451,10 @@ section.join .text-wrap{
 
 .right-0 {
   right: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
 }
 
 .-z-10 {
@@ -1488,6 +1515,10 @@ section.join .text-wrap{
   margin-bottom: 2.75rem;
 }
 
+.mb-44 {
+  margin-bottom: 11rem;
+}
+
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -1498,10 +1529,6 @@ section.join .text-wrap{
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mb-44 {
-  margin-bottom: 11rem;
 }
 
 .mb-14 {
@@ -1516,8 +1543,8 @@ section.join .text-wrap{
   margin-bottom: 1.5rem;
 }
 
-.-mb-36 {
-  margin-bottom: -9rem;
+.mb-36 {
+  margin-bottom: 9rem;
 }
 
 .mb-20 {
@@ -1548,10 +1575,6 @@ section.join .text-wrap{
   margin-right: 1.5rem;
 }
 
-.mr-28 {
-  margin-right: 7rem;
-}
-
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -1566,10 +1589,6 @@ section.join .text-wrap{
 
 .mb-12 {
   margin-bottom: 3rem;
-}
-
-.mb-36 {
-  margin-bottom: 9rem;
 }
 
 .mt-6 {
@@ -1628,6 +1647,10 @@ section.join .text-wrap{
   margin-bottom: 0.25rem;
 }
 
+.mr-28 {
+  margin-right: 7rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1664,16 +1687,20 @@ section.join .text-wrap{
   display: none;
 }
 
-.h-6 {
-  height: 1.5rem;
-}
-
 .h-9 {
   height: 2.25rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-4 {
   height: 1rem;
+}
+
+.max-h-9 {
+  max-height: 2.25rem;
 }
 
 .w-full {
@@ -2137,12 +2164,12 @@ section.join .text-wrap{
   padding-left: 0.75rem;
 }
 
-.pr-14 {
-  padding-right: 3.5rem;
-}
-
 .pb-14 {
   padding-bottom: 3.5rem;
+}
+
+.pr-14 {
+  padding-right: 3.5rem;
 }
 
 .pt-2 {
@@ -2407,6 +2434,11 @@ section.hero .anim{
   .wrap-box{
     max-width: 225px;
   }
+
+  section.about .img-shadow{
+    box-shadow: 0px 80px 137px -32px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -2621,6 +2653,10 @@ section.hero .anim{
 }
 
 @media (min-width: 640px) {
+  .sm\:h-16 {
+    height: 4rem;
+  }
+
   .sm\:h-9 {
     height: 2.25rem;
   }
@@ -2694,6 +2730,11 @@ section.hero .anim{
     left: 0px;
   }
 
+  .lg\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -2713,8 +2754,20 @@ section.hero .anim{
     margin-bottom: 3.5rem;
   }
 
+  .lg\:-mb-36 {
+    margin-bottom: -9rem;
+  }
+
   .lg\:mb-44 {
     margin-bottom: 11rem;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .lg\:mr-28 {
+    margin-right: 7rem;
   }
 
   .lg\:mb-40 {
@@ -2737,10 +2790,6 @@ section.hero .anim{
     margin-bottom: 4rem;
   }
 
-  .lg\:mb-0 {
-    margin-bottom: 0px;
-  }
-
   .lg\:mr-3 {
     margin-right: 0.75rem;
   }
@@ -2753,12 +2802,12 @@ section.hero .anim{
     margin-right: 3.5rem;
   }
 
-  .lg\:mr-28 {
-    margin-right: 7rem;
-  }
-
   .lg\:block {
     display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:grid {
@@ -2767,6 +2816,10 @@ section.hero .anim{
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:max-h-12 {
+    max-height: 3rem;
   }
 
   .lg\:w-10\/12 {

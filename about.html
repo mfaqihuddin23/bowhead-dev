@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/assets/css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
-<body>
+<body class="body-about">
   
   <section class="about mb-44">
     <nav class=" px-2 sm:px-4 py-12 rounded lg:mb-14">
       <div class="container flex flex-wrap justify-between items-center mx-auto">
         <a href="#" class="flex items-center">
-            <img src="/assets/images/logo-nav.png" class="mr-3 h-6 sm:h-9" alt="Bowhead Logo">
+            <img src="/assets/images/logo-nav.png" class="mr-3 h-9 sm:h-16" alt="Bowhead Logo">
             <!-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
         </a>
         <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -60,7 +61,7 @@
         We Are All Patients <br>
         A Privacy - initative to empower people to own and control their health data. 
       </h1>
-      <div class="flex justify-center relative">
+      <div class="lg:flex justify-center relative hidden">
         <div class="img-shadow">
           <img src="assets/images/img-about-header.png" alt="">
         </div>
@@ -101,15 +102,46 @@
             </svg>
         </div>
       </div>
+      <!-- Slider main container -->
+      <div class="swiper lg:hidden">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="img-shadow">
+              <img src="assets/images/img-about-header.png" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-shadow">
+              <img src="assets/images/img-about-header2.png" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img-shadow">
+              <img src="assets/images/img-about-header3.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div> -->
+        <!-- <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
     </div>
   </section>
-  <section class="our-story">
+  <section class="our-story mb-32">
     <div class="container">
-      <div class="text-wrap flex flex-col items-center mx-auto mb-32">
+      <div class="text-wrap flex flex-col items-center mx-auto">
         <h2 class="font-extrabold text-bowhead-100 text-center mb-6">
           Our Story
         </h2>
-        <p class="label-3 font-normal text-bowhead-400 text-center -mb-36">
+        <p class="label-3 font-normal text-bowhead-400 text-center lg:-mb-36">
           Bowhead,s founders, Dr.Francisco Diaz-Mitoma, Dr. Rhea Mehta and Francisco Diaz-Mitoma Jr.were building a smart dispenser for supplements and then one of thrm went to their doctor and asked for their health records. The doctor said those records belonged to their clinic and they couldn’t share them easily. That summer they started building a blockchain team and launched a pilot with 700 patients in switzerland, Germany and Austria. Empowering them to own and control their records. Since then we have helped over 130,000 people create their digital health vaults.
         </p>
         <div class="img-wrap relative -z-10">
@@ -118,13 +150,13 @@
       </div>
     </div>
   </section>
-  <section class="our-team mb-44">
+  <section class="our-team mb-44 overflow-visible">
     <div class="container">
-      <div class="text-wrap mb-44">
+      <div class="text-wrap lg:mb-44 mb-36">
         <h2 class="font-extrabold text-bowhead-100 mb-20">
           Our Team
         </h2>
-        <div class="flex justify-between">
+        <div class="lg:flex justify-between hidden">
           <div class="ourteam">
             <div class="relative mb-5">
               <img src="assets/images/img-our-team1.png" alt="">
@@ -194,14 +226,96 @@
             </h5>
           </div>
         </div>
+        <div class="swiperteam lg:hidden overflow-hidden">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="ourteam">
+                <div class="relative mb-5">
+                  <img src="assets/images/img-our-team1.png" alt="">
+                  <a href="" class="absolute top-6 right-5">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect y="0.00427246" width="47.1448" height="47.0496" rx="23.5248" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8584 21.5084H24.3344V22.7418C24.6911 22.0324 25.6058 21.3951 26.9798 21.3951C29.6138 21.3951 30.2391 22.8071 30.2391 25.3978V30.1958H27.5724V25.9878C27.5724 24.5124 27.2158 23.6804 26.3078 23.6804C25.0484 23.6804 24.5251 24.5771 24.5251 25.9871V30.1958H21.8584V21.5084ZM17.2858 30.0824H19.9524V21.3951H17.2858V30.0824ZM20.3344 18.5624C20.3345 18.7859 20.2902 19.0073 20.204 19.2135C20.1178 19.4197 19.9915 19.6068 19.8324 19.7638C19.51 20.0842 19.0736 20.2635 18.6191 20.2624C18.1654 20.2621 17.73 20.0832 17.4071 19.7644C17.2486 19.6069 17.1227 19.4196 17.0367 19.2134C16.9506 19.0071 16.9061 18.7859 16.9058 18.5624C16.9058 18.1111 17.0858 17.6791 17.4078 17.3604C17.7304 17.0412 18.1659 16.8622 18.6198 16.8624C19.0744 16.8624 19.5104 17.0418 19.8324 17.3604C20.1538 17.6791 20.3344 18.1111 20.3344 18.5624Z" fill="black"/>
+                      </svg>
+                  </a>
+                </div>
+                <h3 class="font-semibold text-bowhead-100 mb-2">
+                  Cameron Williamson
+                </h3>
+                <h5 class="font-normal text-bowhead-400">
+                  CEO
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ourteam">
+                <div class="relative mb-5">
+                  <img src="assets/images/img-our-team2.png" alt="">
+                  <a href="" class="absolute top-6 right-5">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect y="0.00427246" width="47.1448" height="47.0496" rx="23.5248" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8584 21.5084H24.3344V22.7418C24.6911 22.0324 25.6058 21.3951 26.9798 21.3951C29.6138 21.3951 30.2391 22.8071 30.2391 25.3978V30.1958H27.5724V25.9878C27.5724 24.5124 27.2158 23.6804 26.3078 23.6804C25.0484 23.6804 24.5251 24.5771 24.5251 25.9871V30.1958H21.8584V21.5084ZM17.2858 30.0824H19.9524V21.3951H17.2858V30.0824ZM20.3344 18.5624C20.3345 18.7859 20.2902 19.0073 20.204 19.2135C20.1178 19.4197 19.9915 19.6068 19.8324 19.7638C19.51 20.0842 19.0736 20.2635 18.6191 20.2624C18.1654 20.2621 17.73 20.0832 17.4071 19.7644C17.2486 19.6069 17.1227 19.4196 17.0367 19.2134C16.9506 19.0071 16.9061 18.7859 16.9058 18.5624C16.9058 18.1111 17.0858 17.6791 17.4078 17.3604C17.7304 17.0412 18.1659 16.8622 18.6198 16.8624C19.0744 16.8624 19.5104 17.0418 19.8324 17.3604C20.1538 17.6791 20.3344 18.1111 20.3344 18.5624Z" fill="black"/>
+                      </svg>
+                  </a>
+                </div>
+                <h3 class="font-semibold text-bowhead-100 mb-2">
+                  Esther Howard
+                </h3>
+                <h5 class="font-normal text-bowhead-400">
+                  Senior Analistic
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ourteam">
+                <div class="relative mb-5">
+                  <img src="assets/images/img-our-team3.png" alt="">
+                  <a href="" class="absolute top-6 right-5">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect y="0.00427246" width="47.1448" height="47.0496" rx="23.5248" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8584 21.5084H24.3344V22.7418C24.6911 22.0324 25.6058 21.3951 26.9798 21.3951C29.6138 21.3951 30.2391 22.8071 30.2391 25.3978V30.1958H27.5724V25.9878C27.5724 24.5124 27.2158 23.6804 26.3078 23.6804C25.0484 23.6804 24.5251 24.5771 24.5251 25.9871V30.1958H21.8584V21.5084ZM17.2858 30.0824H19.9524V21.3951H17.2858V30.0824ZM20.3344 18.5624C20.3345 18.7859 20.2902 19.0073 20.204 19.2135C20.1178 19.4197 19.9915 19.6068 19.8324 19.7638C19.51 20.0842 19.0736 20.2635 18.6191 20.2624C18.1654 20.2621 17.73 20.0832 17.4071 19.7644C17.2486 19.6069 17.1227 19.4196 17.0367 19.2134C16.9506 19.0071 16.9061 18.7859 16.9058 18.5624C16.9058 18.1111 17.0858 17.6791 17.4078 17.3604C17.7304 17.0412 18.1659 16.8622 18.6198 16.8624C19.0744 16.8624 19.5104 17.0418 19.8324 17.3604C20.1538 17.6791 20.3344 18.1111 20.3344 18.5624Z" fill="black"/>
+                      </svg>
+                  </a>
+                </div>
+                <h3 class="font-semibold text-bowhead-100 mb-2">
+                  Jenny Wilson
+                </h3>
+                <h5 class="font-normal text-bowhead-400">
+                  Lead Programers
+                </h5>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="ourteam">
+                <div class="relative mb-5">
+                  <img src="assets/images/img-our-team4.png" alt="">
+                  <a href="" class="absolute top-6 right-5">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect y="0.00427246" width="47.1448" height="47.0496" rx="23.5248" fill="white"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8584 21.5084H24.3344V22.7418C24.6911 22.0324 25.6058 21.3951 26.9798 21.3951C29.6138 21.3951 30.2391 22.8071 30.2391 25.3978V30.1958H27.5724V25.9878C27.5724 24.5124 27.2158 23.6804 26.3078 23.6804C25.0484 23.6804 24.5251 24.5771 24.5251 25.9871V30.1958H21.8584V21.5084ZM17.2858 30.0824H19.9524V21.3951H17.2858V30.0824ZM20.3344 18.5624C20.3345 18.7859 20.2902 19.0073 20.204 19.2135C20.1178 19.4197 19.9915 19.6068 19.8324 19.7638C19.51 20.0842 19.0736 20.2635 18.6191 20.2624C18.1654 20.2621 17.73 20.0832 17.4071 19.7644C17.2486 19.6069 17.1227 19.4196 17.0367 19.2134C16.9506 19.0071 16.9061 18.7859 16.9058 18.5624C16.9058 18.1111 17.0858 17.6791 17.4078 17.3604C17.7304 17.0412 18.1659 16.8622 18.6198 16.8624C19.0744 16.8624 19.5104 17.0418 19.8324 17.3604C20.1538 17.6791 20.3344 18.1111 20.3344 18.5624Z" fill="black"/>
+                      </svg>
+                  </a>
+                </div>
+                <h3 class="font-semibold text-bowhead-100 mb-2">
+                  Kristin Watson
+                </h3>
+                <h5 class="font-normal text-bowhead-400">
+                  Creative Director
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="text-wrap mb-44">
         <h2 class="font-semibold text-bowhead-100 mb-20">
           Our Values
         </h2>
-        <div class="flex">
-          <div class="flex">
-            <div class="rounded-3xl bg-white values-shadow p-8">
+        <div class="flex flex-col lg:flex-row">
+          <div class="flex mb-6 lg:mb-0 items-center">
+            <div class="box-owner rounded-3xl bg-white values-shadow p-8">
               <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_277_1322)">
                 <path d="M8.3437 16.1211L0.843699 29.6488C0.794572 29.7373 0.763882 29.8349 0.75348 29.9356C0.743078 30.0364 0.753178 30.1381 0.783173 30.2349C0.813168 30.3316 0.862435 30.4212 0.928006 30.4984C0.993577 30.5755 1.07409 30.6386 1.1647 30.6838L5.6647 32.9338C5.83729 33.0203 6.0366 33.037 6.22114 32.9802C6.40568 32.9235 6.56124 32.7978 6.65545 32.6293L6.85195 32.2753C7.23355 33.4152 7.68721 34.5297 8.2102 35.6121C7.92817 36.0084 7.76082 36.4748 7.72655 36.9601C7.69227 37.4453 7.79238 37.9306 8.01589 38.3627C8.2394 38.7947 8.57766 39.1568 8.99352 39.4092C9.40938 39.6616 9.88675 39.7945 10.3732 39.7933H10.4609C10.4752 39.7933 10.4879 39.7896 10.5022 39.7888V39.8121V40.1871C10.503 40.878 10.7778 41.5405 11.2664 42.0291C11.755 42.5177 12.4175 42.7925 13.1085 42.7933H13.383C13.5088 42.7887 13.6341 42.7749 13.758 42.7521C13.794 43.1033 13.9026 43.4433 14.0767 43.7505C14.2508 44.0577 14.4867 44.3255 14.7696 44.5369C15.0524 44.7483 15.376 44.8988 15.7199 44.9789C16.0638 45.0589 16.4206 45.0668 16.7677 45.0021C16.7834 45.1573 16.8146 45.3105 16.8607 45.4596L16.8982 45.5683C17.0633 46.0431 17.3682 46.4567 17.7729 46.7549C18.1776 47.053 18.6631 47.2216 19.1655 47.2386L19.7325 47.2558H19.8255C20.2808 47.2562 20.7301 47.1522 21.1389 46.9517C21.5477 46.7512 21.905 46.4596 22.1835 46.0993L22.4085 46.1796C23.7642 46.6668 25.2302 46.7604 26.637 46.4498C28.0438 46.1391 29.334 45.4367 30.3585 44.4238C30.402 44.4238 30.4455 44.4328 30.489 44.4328C31.2461 44.4292 31.9919 44.2484 32.6667 43.9048C33.3414 43.5613 33.9264 43.0645 34.3747 42.4543L35.094 41.3751C35.5881 41.2162 36.046 40.9614 36.4416 40.6254C36.8372 40.2894 37.1627 39.8787 37.3995 39.4168L37.9245 38.6338C38.5237 38.3871 39.0276 37.954 39.3615 37.3986C39.6268 36.9501 39.773 36.4412 39.7861 35.9203C39.7992 35.3994 39.6789 34.8838 39.4365 34.4226L41.2815 32.5476L41.3527 32.6691C41.4494 32.8335 41.6052 32.9549 41.7883 33.0086C41.9714 33.0622 42.168 33.044 42.3382 32.9578L46.8382 30.6793C46.9297 30.633 47.0107 30.5684 47.0763 30.4896C47.1418 30.4108 47.1905 30.3193 47.2193 30.2209C47.2482 30.1225 47.2565 30.0192 47.2438 29.9175C47.2312 29.8157 47.1978 29.7176 47.1457 29.6293L39.6457 16.8793C39.549 16.7149 39.3932 16.5935 39.2101 16.5398C39.027 16.4862 38.8304 16.5043 38.6602 16.5906L34.1602 18.8691C34.0687 18.9154 33.9877 18.9799 33.9221 19.0588C33.8566 19.1376 33.8079 19.2291 33.7791 19.3275C33.7503 19.4259 33.7419 19.5291 33.7546 19.6309C33.7672 19.7326 33.8006 19.8307 33.8527 19.9191L34.5097 21.0358C33.096 21.3887 31.6142 21.3629 30.2137 20.9608C28.6102 20.5041 26.9171 20.4605 25.2922 20.8341L18.6847 22.3588C17.0112 22.0248 15.4743 21.2018 14.2687 19.9941L13.884 19.6093L14.1547 19.1226C14.2037 19.0344 14.2345 18.9372 14.2451 18.8368C14.2557 18.7364 14.2459 18.635 14.2163 18.5385C14.1868 18.442 14.1381 18.3524 14.0731 18.2752C14.0081 18.198 13.9282 18.1347 13.8382 18.0891L9.3382 15.8113C9.16459 15.7241 8.96391 15.7076 8.77841 15.7654C8.5929 15.8232 8.43706 15.9507 8.3437 16.1211ZM10.3732 38.2911C10.1588 38.2907 9.94862 38.2308 9.76632 38.1179C9.58401 38.0049 9.43671 37.8435 9.3409 37.6517C9.24509 37.4598 9.20455 37.2451 9.22381 37.0315C9.24306 36.8179 9.32137 36.6139 9.44995 36.4423L10.5292 35.0038C10.637 34.8603 10.7766 34.7439 10.9371 34.6636C11.0976 34.5833 11.2745 34.5413 11.4539 34.5411H11.5949C11.9012 34.5415 12.1947 34.6633 12.4112 34.8798C12.6277 35.0963 12.7496 35.3899 12.75 35.6961V36.0043C12.7488 36.3104 12.6273 36.6037 12.4117 36.8211L11.2777 37.9543C11.1707 38.0619 11.0434 38.1472 10.9032 38.2052C10.763 38.2633 10.6127 38.293 10.4609 38.2926L10.3732 38.2911ZM13.1062 41.2911C12.8129 41.2907 12.5318 41.174 12.3244 40.9666C12.117 40.7592 12.0003 40.4781 11.9999 40.1848V39.8098C12.0008 39.5166 12.1172 39.2355 12.3239 39.0276C12.3284 39.0231 12.3352 39.0193 12.3397 39.0148L13.4715 37.8793C13.4797 37.8718 13.485 37.8621 13.4932 37.8538L14.985 36.3621C15.0874 36.2592 15.2092 36.1777 15.3433 36.1222C15.4775 36.0667 15.6213 36.0383 15.7664 36.0388H15.9097C16.1198 36.0388 16.3256 36.0987 16.503 36.2114C16.6803 36.3242 16.8219 36.4851 16.9111 36.6753C17.0004 36.8656 17.0336 37.0773 17.0068 37.2858C16.9801 37.4942 16.8946 37.6907 16.7602 37.8523L14.3355 40.7668L14.2327 40.8906C14.129 41.0153 13.9991 41.1156 13.8522 41.1845C13.7054 41.2533 13.5451 41.2889 13.383 41.2888L13.1062 41.2911ZM16.338 43.5411C16.1279 43.5411 15.9222 43.4812 15.7448 43.3686C15.5675 43.256 15.4259 43.0952 15.3366 42.905C15.2473 42.7149 15.214 42.5032 15.2406 42.2948C15.2672 42.0865 15.3525 41.89 15.4867 41.7283L17.9144 38.8153L18.0172 38.6923C18.1264 38.5631 18.2634 38.4602 18.4179 38.3912C18.5725 38.3222 18.7406 38.289 18.9097 38.2941C19.1198 38.2941 19.3256 38.354 19.503 38.4667C19.6803 38.5794 19.8219 38.7403 19.9111 38.9306C20.0004 39.1208 20.0336 39.3326 20.0068 39.541C19.9801 39.7495 19.8946 39.946 19.7602 40.1076L17.229 43.1451C17.1197 43.2737 16.9828 43.376 16.8286 43.4446C16.6743 43.5131 16.5067 43.5461 16.338 43.5411ZM19.7752 45.7543L19.2082 45.7371C19.0098 45.7305 18.8181 45.6639 18.6583 45.5461C18.4985 45.4282 18.3783 45.2647 18.3134 45.0771L18.276 44.9683C18.2216 44.8094 18.209 44.6391 18.2394 44.4739C18.2697 44.3087 18.342 44.1541 18.4492 44.0248L20.9145 41.0661L21.0562 40.8966C21.1477 40.7865 21.2624 40.6979 21.392 40.6371C21.5216 40.5763 21.663 40.5448 21.8062 40.5448H22.275C22.4522 40.544 22.6262 40.5916 22.7784 40.6823C22.9306 40.7731 23.0552 40.9036 23.1388 41.0598C23.2224 41.2161 23.2619 41.3922 23.2529 41.5691C23.2439 41.7461 23.1869 41.9173 23.088 42.0643L21.0705 45.0898C20.9287 45.3014 20.7355 45.4735 20.5088 45.5897C20.2822 45.706 20.0298 45.7626 19.7752 45.7543ZM38.7105 18.2503L45.45 29.7043L42.291 31.3033L35.55 19.8493L38.7105 18.2503ZM25.6305 22.3003C27.0077 21.9834 28.4428 22.0203 29.802 22.4076C31.5995 22.9242 33.5075 22.914 35.2995 22.3783L40.4947 31.2111L38.448 33.2923C35.1689 30.6901 31.6709 28.3765 27.993 26.3773L28.5877 26.2813L28.35 24.8001L26.1 25.1623C24.6572 25.3952 23.1993 25.5218 21.738 25.5411C21.5724 25.5432 21.4123 25.6001 21.2824 25.7028C21.1526 25.8055 21.0604 25.9482 21.0202 26.1088L20.838 26.8371C20.7162 27.3237 20.4353 27.7558 20.0399 28.0645C19.6444 28.3733 19.1571 28.541 18.6555 28.5411H16.8322L18.5572 23.9308L25.6305 22.3003ZM13.2082 21.0591C14.3092 22.1598 15.6495 22.9914 17.1247 23.4891L15.0472 29.0293C15.005 29.1427 14.9908 29.2647 15.0059 29.3848C15.021 29.5049 15.065 29.6195 15.1341 29.7189C15.2031 29.8183 15.2952 29.8995 15.4024 29.9556C15.5097 30.0117 15.6289 30.041 15.75 30.0411H18.6577C19.4942 30.0419 20.3069 29.7627 20.9663 29.2479C21.6257 28.7332 22.0938 28.0125 22.296 27.2008L22.3387 27.0283C23.3927 26.9895 24.444 26.8976 25.4887 26.7531C29.8219 28.9508 33.9184 31.5871 37.7137 34.6206C38.0057 34.8559 38.203 35.1887 38.2693 35.5578C38.3356 35.9269 38.2664 36.3076 38.0745 36.6298C37.9678 36.8073 37.8268 36.9617 37.6596 37.0838C37.4924 37.2059 37.3024 37.2933 37.1009 37.3408C36.8994 37.3884 36.6904 37.3951 36.4862 37.3605C36.2821 37.326 36.0869 37.251 35.9122 37.1398L29.6557 33.1581L28.8495 34.4241L35.1052 38.4043C35.3887 38.5827 35.6996 38.7132 36.0255 38.7906C35.8696 39.0759 35.659 39.3278 35.4057 39.5317C35.1525 39.7356 34.8615 39.8877 34.5495 39.9791C34.2375 40.0706 33.9105 40.0997 33.5872 40.0647C33.2639 40.0297 32.9507 39.9314 32.6655 39.7753L27.36 36.8826L26.6415 38.1996L31.95 41.0938C32.3401 41.3047 32.7626 41.4492 33.2002 41.5213L33.1545 41.5911C32.6561 42.2625 31.9222 42.7207 31.1001 42.8737C30.2781 43.0267 29.4285 42.8632 28.722 42.4161L25.902 40.6536L25.1062 41.9286L27.9262 43.6911C28.1155 43.8086 28.3124 43.9133 28.5157 44.0046C27.7317 44.5537 26.8304 44.9123 25.8834 45.0517C24.9364 45.1912 23.97 45.1076 23.061 44.8078L24.336 42.8938C24.5858 42.5209 24.7296 42.087 24.7518 41.6387C24.7741 41.1904 24.674 40.7444 24.4622 40.3486C24.2505 39.9528 23.9351 39.622 23.5498 39.3917C23.1645 39.1614 22.7238 39.0402 22.275 39.0411H21.8115C21.7058 39.0457 21.6006 39.0572 21.4965 39.0756C21.4761 38.9049 21.4394 38.7367 21.387 38.5731C21.2102 38.0481 20.8714 37.5927 20.4194 37.2725C19.9673 36.9522 19.4254 36.7837 18.8715 36.7911C18.7456 36.7957 18.6203 36.8094 18.4965 36.8323C18.4762 36.6594 18.4393 36.4889 18.3862 36.3231C18.2134 35.8035 17.8812 35.3517 17.4369 35.0318C16.9926 34.7119 16.4587 34.5402 15.9112 34.5411H15.768C15.1896 34.5429 14.6287 34.7394 14.1757 35.0991C14.0406 34.515 13.712 33.9937 13.2432 33.6201C12.7744 33.2465 12.1929 33.0424 11.5934 33.0411H11.4524C11.0404 33.0421 10.6341 33.1385 10.2655 33.3228C9.89685 33.507 9.57588 33.7741 9.3277 34.1031L9.22195 34.2441C8.70997 33.0952 8.27941 31.9118 7.93345 30.7026L7.85845 30.4536L13.125 20.9781L13.2082 21.0591ZM5.6932 31.2703L2.53495 29.6916L9.30595 17.4793L12.4657 19.0791L5.6932 31.2703Z" fill="#3CB2B8"/>
@@ -223,8 +337,8 @@
               </p>
             </div>
           </div>
-          <div class="flex mx-5">
-            <div class="rounded-3xl bg-white values-shadow p-8">
+          <div class="flex mb-6 lg:mb-0 lg:mx-5 items-center">
+            <div class="box-owner rounded-3xl bg-white values-shadow p-8">
               <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_277_1325)">
                 <path d="M16.5 5.62939C15.9825 5.62939 15.5625 6.04944 15.5625 6.56689C15.5625 7.08435 15.9825 7.50439 16.5 7.50439C17.0175 7.50439 17.4375 7.08435 17.4375 6.56689C17.4375 6.04944 17.0175 5.62939 16.5 5.62939Z" fill="#3CB2B8"/>
@@ -250,8 +364,8 @@
               </p>
             </div>
           </div>
-          <div class="flex">
-            <div class="rounded-3xl bg-white values-shadow p-8">
+          <div class="flex mb-6 lg:mb-0 items-center">
+            <div class="box-owner rounded-3xl bg-white values-shadow p-8">
               <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M35.5479 4.49977H28.3159C27.4965 2.64281 25.6578 1.44434 23.6279 1.44434C21.5976 1.44434 19.7589 2.64281 18.9394 4.49977H11.7071C8.97893 4.50293 6.7683 6.71391 6.76514 9.44204V41.5021C6.7683 44.2303 8.97893 46.4412 11.7071 46.4444H35.5479C38.2761 46.4412 40.4871 44.2303 40.4902 41.5021V9.44204C40.4871 6.71391 38.2761 4.50293 35.5479 4.49977ZM19.7533 6.74977C20.2813 6.74977 20.7384 6.38239 20.8519 5.86594C21.1282 4.60805 22.2958 3.69434 23.6279 3.69434C24.9599 3.69434 26.1271 4.60805 26.4034 5.86594C26.5166 6.38239 26.9737 6.74977 27.5024 6.74977H29.7331V7.73696C29.7313 9.22302 28.5272 10.4271 27.0412 10.4289H20.2142C18.7278 10.4271 17.5237 9.22302 17.5219 7.73696V6.74977H19.7533ZM38.2402 41.5021C38.2388 42.9885 37.0344 44.193 35.5479 44.1944H11.7071C10.221 44.193 9.0169 42.9885 9.01514 41.5021V9.44204C9.0169 7.95563 10.221 6.75153 11.7071 6.74977H15.2719V7.73696C15.2751 10.4651 17.486 12.6757 20.2142 12.6789H27.0412C29.7693 12.6757 31.9799 10.4651 31.9831 7.73696V6.74977H35.5479C37.0344 6.75153 38.2385 7.95563 38.2402 9.44204V41.5021Z" fill="#3CB2B8"/>
                 <path d="M29.1955 22.2305L21.8099 29.4418L18.0594 25.781C17.6182 25.3492 16.9116 25.3545 16.476 25.7918C16.0407 26.2295 16.039 26.9362 16.4724 27.3756L16.4876 27.3904L21.0234 31.8194C21.4608 32.2462 22.1586 32.2462 22.5956 31.8194L30.767 23.841C31.2089 23.4065 31.2159 22.6967 30.7835 22.2534C30.3504 21.81 29.6409 21.8002 29.1955 22.2312V22.2305Z" fill="#3CB2B8"/>
@@ -268,20 +382,30 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-around mb-44">
-        <div class="logo">
-          <img src="assets/images/logo-forbes.png" alt="">
-        </div>
-        <div class="logo">
-          <img src="assets/images/logo-stat.png" alt="">
-        </div>
-        <div class="logo">
-          <img src="assets/images/logo-inc.png" alt="">
+      <div class="swiperlogo overflow-hidden mb-44">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="logo flex justify-center">
+              <img src="assets/images/logo-forbes.png" alt="" class="max-h-9 lg:max-h-12">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="logo flex justify-center">
+              <img src="assets/images/logo-stat.png" alt="" class="max-h-9 lg:max-h-12">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="logo flex justify-center">
+              <img src="assets/images/logo-inc.png" alt="" class="max-h-9 lg:max-h-12">
+            </div>
+          </div>
         </div>
       </div>
       <div class="cta flex flex-col items-center">
         <h2 class="font-bold text-bowhead-100 text-center mb-14">
-          Get Started with Bowhead
+          Get Started <br> with Bowhead
         </h2>
         <a href="#" class="">
           <button type="button" class="px-12 py-5 text-base font-semibold text-white rounded-full bg-gradient-to-r from-[#FCD25C] to-[#FF9A66]
@@ -291,7 +415,7 @@
     </div>
   </section>
 
-  <section class="footer relative pb-14">
+  <section class="relative pb-14">
     <div class="container">
       <div class="flex justify-between mb-7 flex-col lg:flex-row">
         <div class="brand w-24 mb-14 lg:mb-0">
@@ -474,5 +598,7 @@
 
 
   <script src="/node_modules/flowbite/dist/flowbite.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="assets/js/slider.js"></script>
 </body>
 </html>
