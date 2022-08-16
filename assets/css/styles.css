@@ -1151,6 +1151,12 @@ section.footer .label-1{
   height: auto;
 }
 
+.swiper-slide{
+  width: -webkit-max-content !important;
+  width: -moz-max-content !important;
+  width: max-content !important;
+}
+
 section.about{
   background: url('../images/bg-header.svg');
   background-position: top left;
@@ -1169,8 +1175,8 @@ section.about .img-shadow{
 }
 
 .whale{
-  bottom: -22%;
-  left: -2%;
+  bottom: -20%;
+  left: -96px;
 }
 
 section.our-story .text-wrap{
@@ -1179,18 +1185,6 @@ section.our-story .text-wrap{
 
 .values-shadow{
   box-shadow: 0px 38px 55px -19px rgba(0, 0, 0, 0.09);
-}
-
-.swiperteam .swiper-slide{
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.swiperlogo .swiper-slide{
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
 }
 
 .ourteam{
@@ -1457,6 +1451,10 @@ section.join .text-wrap{
   bottom: 0px;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1471,10 +1469,6 @@ section.join .text-wrap{
 
 .z-20 {
   z-index: 20;
-}
-
-.z-10 {
-  z-index: 10;
 }
 
 .z-40 {
@@ -2439,6 +2433,11 @@ section.hero .anim{
     box-shadow: 0px 80px 137px -32px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
   }
+
+  /* .whale{
+    bottom: -22%;
+    left: -2%;
+  } */
 }
 
 @media (min-width: 1280px) {
