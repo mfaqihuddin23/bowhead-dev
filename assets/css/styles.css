@@ -1228,6 +1228,10 @@ section.join .text-wrap{
   /* max-width: 466px; */
 }
 
+.map-contact{
+  min-height:  450px;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1722,6 +1726,10 @@ section.join .text-wrap{
   max-height: 2.25rem;
 }
 
+.max-h-16 {
+  max-height: 4rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1754,10 +1762,6 @@ section.join .text-wrap{
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-5\/12 {
-  width: 41.666667%;
 }
 
 .w-64 {
@@ -1978,6 +1982,11 @@ section.join .text-wrap{
   border-style: dashed;
 }
 
+.border-bowhead-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(66 66 66 / var(--tw-border-opacity));
+}
+
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -2180,6 +2189,16 @@ section.join .text-wrap{
   padding-right: 1.25rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
 .pr-4 {
   padding-right: 1rem;
 }
@@ -2190,10 +2209,6 @@ section.join .text-wrap{
 
 .pb-14 {
   padding-bottom: 3.5rem;
-}
-
-.pr-14 {
-  padding-right: 3.5rem;
 }
 
 .pb-12 {
@@ -2492,6 +2507,12 @@ section.hero .anim{
     width: 100%;
     max-width: 1137px;
   }
+}
+
+.body-contact{
+  background: url('../images/bg-bottom.svg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
 
 .hover\:border-gray-300:hover {
@@ -2816,6 +2837,14 @@ section.hero .anim{
     margin-right: 7rem;
   }
 
+  .lg\:mb-3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .lg\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .lg\:mb-40 {
     margin-bottom: 10rem;
   }
@@ -2848,6 +2877,10 @@ section.hero .anim{
     margin-right: 3.5rem;
   }
 
+  .lg\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -2868,6 +2901,10 @@ section.hero .anim{
     max-height: 3rem;
   }
 
+  .lg\:w-6\/12 {
+    width: 50%;
+  }
+
   .lg\:w-10\/12 {
     width: 83.333333%;
   }
@@ -2882,10 +2919,6 @@ section.hero .anim{
 
   .lg\:w-4\/12 {
     width: 33.333333%;
-  }
-
-  .lg\:w-6\/12 {
-    width: 50%;
   }
 
   .lg\:w-3\/12 {
@@ -2932,6 +2965,10 @@ section.hero .anim{
     padding: 5rem;
   }
 
+  .lg\:p-24 {
+    padding: 6rem;
+  }
+
   .lg\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -2945,6 +2982,20 @@ section.hero .anim{
   .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .lg\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .lg\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .lg\:pr-14 {
+    padding-right: 3.5rem;
   }
 
   .lg\:pb-24 {

@@ -3,32 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/assets/css/styles.css" rel="stylesheet">
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
   />
+  <link href="/assets/css/styles.css" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  
 </head>
-<body>
-  <nav class=" px-2 sm:px-4 py-12 rounded mb-14">
+<body class="body-contact">
+  <nav class=" px-2 sm:px-4 py-12 rounded lg:mb-14">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
       <a href="#" class="flex items-center">
-          <img src="/assets/images/logo-nav.png" class="mr-3 h-6 sm:h-9" alt="Bowhead Logo">
+          <img src="/assets/images/logo-bowhead.png" class="mr-3 h-6 sm:h-9" alt="Bowhead Logo">
           <!-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
       </a>
       <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_23_19)">
-          <path d="M9 7.19999C9 6.20592 9.80592 5.39999 10.8 5.39999H34.2C35.1941 5.39999 36 6.20592 36 7.19999C36 8.19407 35.1941 8.99999 34.2 8.99999H10.8C9.80592 8.99999 9 8.194 9 7.19999ZM34.2 16.2H1.8C0.805922 16.2 0 17.006 0 18C0 18.9941 0.805922 19.8 1.8 19.8H34.2C35.1941 19.8 36 18.9941 36 18C36 17.006 35.1941 16.2 34.2 16.2ZM34.2 27H18C17.006 27 16.2 27.8059 16.2 28.8C16.2 29.794 17.006 30.6 18 30.6H34.2C35.1941 30.6 36 29.794 36 28.8C36 27.8059 35.1941 27 34.2 27Z" fill="white"/>
+          <g clip-path="url(#clip0_287_1449)">
+          <path d="M9 7.19999C9 6.20592 9.80592 5.39999 10.8 5.39999H34.2C35.1941 5.39999 36 6.20592 36 7.19999C36 8.19407 35.1941 8.99999 34.2 8.99999H10.8C9.80592 8.99999 9 8.194 9 7.19999ZM34.2 16.2H1.8C0.805922 16.2 0 17.006 0 18C0 18.9941 0.805922 19.8 1.8 19.8H34.2C35.1941 19.8 36 18.9941 36 18C36 17.006 35.1941 16.2 34.2 16.2ZM34.2 27H18C17.006 27 16.2 27.8059 16.2 28.8C16.2 29.794 17.006 30.6 18 30.6H34.2C35.1941 30.6 36 29.794 36 28.8C36 27.8059 35.1941 27 34.2 27Z" fill="#424242"/>
           </g>
           <defs>
-          <clipPath id="clip0_23_19">
+          <clipPath id="clip0_287_1449">
           <rect width="36" height="36" fill="white"/>
           </clipPath>
           </defs>
           </svg>
+          
           
       </button>
       <div class="hidden w-full md:block md:w-auto" id="navbar-default">
@@ -38,7 +40,7 @@
           </li> -->
           <li>
             <div class="">
-              <a href="#" target="_blank" rel="noopener noreferrer" class="text-white font-normal border rounded-full text-sm px-12 py-4 text-center">
+              <a href="#" target="_blank" rel="noopener noreferrer" class="text-bowhead-100 font-normal border border-bowhead-100 rounded-full text-sm px-12 py-4 text-center">
                 About
               </a>
             </div>
@@ -60,8 +62,14 @@
   
   <section class="contact-us mb-20">
     <div class="container">
-      <div class="flex">
-        <div class="w-6/12 pr-14">
+      <div class="flex flex-col lg:flex-row">
+        <div class="lg:w-6/12 lg:pr-14 mb-14 lg:mb-0">
+          <h1 class="font-bold text-bowhead-100 mb-2 lg:mb-3">
+            Contact Us
+          </h1>
+          <div class="font-normal lg:text-base text-sm mb-6 lg:mb-4">
+            Our friendly team would love to hear from you!
+          </div>
           <form>
             <div class="grid gap-6 mb-6 md:grid-cols-2">
               <div>
@@ -77,7 +85,7 @@
               <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
               <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="john.doe@company.com" required="">
             </div> 
-            <div class="mb-6">
+            <div class="mb-6 flex flex-col ">
               <label for="phone" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Phone number</label>
               <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required="">
             </div>
@@ -85,22 +93,23 @@
               <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
               <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your message..."></textarea>
             </div>
-            <a href="#" class="w-full">
+            <a href="mailto:contact@yourdomain.com" class="w-full">
               <button type="button" class="px-12 py-5 text-base font-semibold text-white rounded-full w-full bg-gradient-to-r from-[#FCD25C] to-[#FF9A66]
               ">Send Message</button>
             </a>
+            
           </form>
         </div>
-        <div class="w-6/12">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d909.6995501621521!2d-75.8822451769573!3d45.31050410954371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccdff95686bcbc1%3A0xdaeb1dc13e0f6c49!2s120%20Barrow%20Crescent%2C%20Kanata%2C%20ON%20K2L%202K1%2C%20Canada!5e0!3m2!1sen!2sid!4v1659948181416!5m2!1sen!2sid" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="lg:w-6/12 ">
+          <iframe class="map-contact" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d909.6995501621521!2d-75.8822451769573!3d45.31050410954371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccdff95686bcbc1%3A0xdaeb1dc13e0f6c49!2s120%20Barrow%20Crescent%2C%20Kanata%2C%20ON%20K2L%202K1%2C%20Canada!5e0!3m2!1sen!2sid!4v1659948181416!5m2!1sen!2sid" width="100%" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>
   </section>
   <section class="our-location">
-    <div class="container bg-white rounded-3xl p-24">
-      <div class="flex justify-between items-start mb-16">
-        <div class="flex w-6/12 items-start">
+    <div class="container bg-white rounded-3xl lg:px-24 px-4 lg:py-24 py-14">
+      <!-- <div class="flex justify-between items-start mb-16 flex-col lg:flex-row">
+        <div class="flex lg:w-6/12 items-start mb-6 lg:mb-0">
           <div class="rounded-3xl p-8 bg-bowhead-700 flex justify-center items-center">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_288_1520)">
@@ -118,7 +127,7 @@
             <h4 class="font-semibold text-bowhead-100 mb-2">
               Chat to sales
             </h4>
-            <p class="label-1 font-normal text-bowhead-400 mb-2">
+            <p class="text-sm lg:text-base font-normal text-bowhead-400 mb-2">
               Speak to our friendly team.
             </p>
             <a href="mailto:sales@bowheadhealth.com">
@@ -128,7 +137,7 @@
             </a>
           </div>
         </div>
-        <div class="flex w-6/12 items-start">
+        <div class="flex lg:w-6/12 items-start">
           <div class="rounded-3xl p-8 bg-bowhead-700 flex justify-center items-center">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_288_1525)">
@@ -145,43 +154,96 @@
             <h4 class="font-semibold text-bowhead-100 mb-2">
               Visit our Design Center
             </h4>
-            <p class="label-1 font-normal text-bowhead-400 mb-2">
+            <p class="text-sm lg:text-base font-normal text-bowhead-400 mb-2">
               300 Sannta Monica Blvd., Floor 3 <br>
               Santa Monica, CA, USA
             </p>
           </div>
         </div>
-      </div>
-      <div class="flex justify-between items-start mb-24">
-        <div class="flex w-6/12">
-          <div class="rounded-3xl p-8 bg-bowhead-700 flex justify-center items-center">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_288_1523)">
-              <path d="M23.0003 11C22.7351 11 22.4807 10.8946 22.2932 10.7071C22.1057 10.5196 22.0003 10.2652 22.0003 9.99999C21.9982 7.87891 21.1546 5.84531 19.6548 4.34547C18.155 2.84564 16.1214 2.00211 14.0003 1.99999C13.7351 1.99999 13.4807 1.89463 13.2932 1.7071C13.1057 1.51956 13.0003 1.26521 13.0003 0.99999C13.0003 0.734773 13.1057 0.480419 13.2932 0.292883C13.4807 0.105347 13.7351 -1.03539e-05 14.0003 -1.03539e-05C16.6516 0.00290124 19.1934 1.0574 21.0681 2.93214C22.9429 4.80687 23.9974 7.34872 24.0003 9.99999C24.0003 10.2652 23.8949 10.5196 23.7074 10.7071C23.5199 10.8946 23.2655 11 23.0003 11ZM20.0003 9.99999C20.0003 8.40869 19.3682 6.88257 18.2429 5.75735C17.1177 4.63213 15.5916 3.99999 14.0003 3.99999C13.7351 3.99999 13.4807 4.10535 13.2932 4.29288C13.1057 4.48042 13.0003 4.73477 13.0003 4.99999C13.0003 5.26521 13.1057 5.51956 13.2932 5.7071C13.4807 5.89463 13.7351 5.99999 14.0003 5.99999C15.0612 5.99999 16.0786 6.42142 16.8287 7.17156C17.5789 7.92171 18.0003 8.93912 18.0003 9.99999C18.0003 10.2652 18.1057 10.5196 18.2932 10.7071C18.4807 10.8946 18.7351 11 19.0003 11C19.2655 11 19.5199 10.8946 19.7074 10.7071C19.8949 10.5196 20.0003 10.2652 20.0003 9.99999ZM22.1833 22.164L23.0933 21.115C23.6725 20.5339 23.9977 19.7469 23.9977 18.9265C23.9977 18.1061 23.6725 17.3191 23.0933 16.738C23.0623 16.707 20.6563 14.856 20.6563 14.856C20.0788 14.3063 19.3118 14.0003 18.5146 14.0014C17.7174 14.0025 16.9512 14.3107 16.3753 14.862L14.4693 16.468C12.9135 15.8241 11.5002 14.8792 10.3106 13.6875C9.12098 12.4958 8.17851 11.0809 7.5373 9.52399L9.1373 7.62399C9.68901 7.04816 9.99759 6.28187 9.9989 5.48439C10.0002 4.68692 9.69413 3.91962 9.1443 3.34199C9.1443 3.34199 7.2913 0.93899 7.2603 0.90799C6.68975 0.333738 5.91618 0.00701166 5.10672 -0.00159557C4.29727 -0.0102028 3.51693 0.3 2.9343 0.86199L1.7843 1.86199C-5.0097 9.74399 9.62029 24.261 17.7623 24C18.5845 24.0048 19.3993 23.8447 20.1586 23.5294C20.9179 23.2141 21.6064 22.7498 22.1833 22.164Z" fill="white"/>
-              </g>
-              <defs>
-              <clipPath id="clip0_288_1523">
-              <rect width="24" height="24" fill="white"/>
-              </clipPath>
-              </defs>
-            </svg>
-          </div>
-          <div class="text-wrap ml-5">
-            <h4 class="font-semibold text-bowhead-100 mb-2">
-              Call Us
-            </h4>
-            <p class="label-1 font-normal text-bowhead-400 mb-2">
-              Mon-Fri from 8am to 5pm.
-            </p>
-            <a href="tel:+1 320 5446 9887">
-              <p class="label-1 font-normal text-bowhead-500">
-                +1 320 5446 9887
+      </div> -->
+      <div class="flex flex-col lg:flex-row mb-14 lg:mb-24">
+        <div class="lg:w-6/12">
+          <div class="flex items-start mb-6 lg:mb-16">
+            <div class="rounded-3xl p-8 bg-bowhead-700 flex justify-center items-center">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_288_1520)">
+                <path d="M23.954 5.54199L15.536 13.96C14.5974 14.8962 13.3257 15.422 12 15.422C10.6743 15.422 9.40263 14.8962 8.464 13.96L0.046 5.54199C0.032 5.69999 0 5.84299 0 5.99999V18C0.00158786 19.3256 0.528882 20.5964 1.46622 21.5338C2.40356 22.4711 3.67441 22.9984 5 23H19C20.3256 22.9984 21.5964 22.4711 22.5338 21.5338C23.4711 20.5964 23.9984 19.3256 24 18V5.99999C24 5.84299 23.968 5.69999 23.954 5.54199Z" fill="white"/>
+                <path d="M14.1221 12.546L23.2561 3.411C22.8137 2.67732 22.1896 2.07004 21.4441 1.64773C20.6986 1.22542 19.8569 1.00234 19.0001 1H5.00014C4.14336 1.00234 3.30164 1.22542 2.55617 1.64773C1.81069 2.07004 1.18662 2.67732 0.744141 3.411L9.87814 12.546C10.4417 13.1073 11.2047 13.4225 12.0001 13.4225C12.7956 13.4225 13.5586 13.1073 14.1221 12.546Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_288_1520">
+                <rect width="24" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="text-wrap ml-5">
+              <h4 class="font-semibold text-bowhead-100 mb-2">
+                Chat to sales
+              </h4>
+              <p class="text-sm lg:text-base font-normal text-bowhead-400 mb-2">
+                Speak to our friendly team.
               </p>
-            </a>
+              <a href="mailto:sales@bowheadhealth.com">
+                <p class="text-sm lg:text-base font-normal text-bowhead-500">
+                  sales@bowheadhealth.com
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="flex items-start mb-6 lg:mb-16">
+            <div class="rounded-3xl p-8 bg-bowhead-700 flex justify-center items-center">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_288_1523)">
+                <path d="M23.0003 11C22.7351 11 22.4807 10.8946 22.2932 10.7071C22.1057 10.5196 22.0003 10.2652 22.0003 9.99999C21.9982 7.87891 21.1546 5.84531 19.6548 4.34547C18.155 2.84564 16.1214 2.00211 14.0003 1.99999C13.7351 1.99999 13.4807 1.89463 13.2932 1.7071C13.1057 1.51956 13.0003 1.26521 13.0003 0.99999C13.0003 0.734773 13.1057 0.480419 13.2932 0.292883C13.4807 0.105347 13.7351 -1.03539e-05 14.0003 -1.03539e-05C16.6516 0.00290124 19.1934 1.0574 21.0681 2.93214C22.9429 4.80687 23.9974 7.34872 24.0003 9.99999C24.0003 10.2652 23.8949 10.5196 23.7074 10.7071C23.5199 10.8946 23.2655 11 23.0003 11ZM20.0003 9.99999C20.0003 8.40869 19.3682 6.88257 18.2429 5.75735C17.1177 4.63213 15.5916 3.99999 14.0003 3.99999C13.7351 3.99999 13.4807 4.10535 13.2932 4.29288C13.1057 4.48042 13.0003 4.73477 13.0003 4.99999C13.0003 5.26521 13.1057 5.51956 13.2932 5.7071C13.4807 5.89463 13.7351 5.99999 14.0003 5.99999C15.0612 5.99999 16.0786 6.42142 16.8287 7.17156C17.5789 7.92171 18.0003 8.93912 18.0003 9.99999C18.0003 10.2652 18.1057 10.5196 18.2932 10.7071C18.4807 10.8946 18.7351 11 19.0003 11C19.2655 11 19.5199 10.8946 19.7074 10.7071C19.8949 10.5196 20.0003 10.2652 20.0003 9.99999ZM22.1833 22.164L23.0933 21.115C23.6725 20.5339 23.9977 19.7469 23.9977 18.9265C23.9977 18.1061 23.6725 17.3191 23.0933 16.738C23.0623 16.707 20.6563 14.856 20.6563 14.856C20.0788 14.3063 19.3118 14.0003 18.5146 14.0014C17.7174 14.0025 16.9512 14.3107 16.3753 14.862L14.4693 16.468C12.9135 15.8241 11.5002 14.8792 10.3106 13.6875C9.12098 12.4958 8.17851 11.0809 7.5373 9.52399L9.1373 7.62399C9.68901 7.04816 9.99759 6.28187 9.9989 5.48439C10.0002 4.68692 9.69413 3.91962 9.1443 3.34199C9.1443 3.34199 7.2913 0.93899 7.2603 0.90799C6.68975 0.333738 5.91618 0.00701166 5.10672 -0.00159557C4.29727 -0.0102028 3.51693 0.3 2.9343 0.86199L1.7843 1.86199C-5.0097 9.74399 9.62029 24.261 17.7623 24C18.5845 24.0048 19.3993 23.8447 20.1586 23.5294C20.9179 23.2141 21.6064 22.7498 22.1833 22.164Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_288_1523">
+                <rect width="24" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="text-wrap ml-5">
+              <h4 class="font-semibold text-bowhead-100 mb-2">
+                Call Us
+              </h4>
+              <p class="text-sm lg:text-base font-normal text-bowhead-400 mb-2">
+                Mon-Fri from 8am to 5pm.
+              </p>
+              <a href="tel:+1 320 5446 9887">
+                <p class="text-sm lg:text-base font-normal text-bowhead-500">
+                  +1 320 5446 9887
+                </p>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="flex w-6/12">
-          <div class="text-wrap ml-5">
+        <div class="lg:w-6/12">
+          <div class="flex items-start mb-6 lg:mb-16">
+            <div class="rounded-3xl p-8 bg-bowhead-700 flex justify-center items-center">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_288_1525)">
+                <path d="M11.9996 0.0419922C9.3535 0.0449033 6.81663 1.09727 4.94549 2.96822C3.07435 4.83918 2.02173 7.37593 2.01855 10.022C2.01855 12.592 4.00855 16.614 7.93355 21.976C8.40081 22.6161 9.01261 23.1369 9.71916 23.4959C10.4257 23.8549 11.207 24.042 11.9996 24.042C12.7921 24.042 13.5734 23.8549 14.28 23.4959C14.9865 23.1369 15.5983 22.6161 16.0656 21.976C19.9906 16.614 21.9806 12.592 21.9806 10.022C21.9774 7.37593 20.9248 4.83918 19.0536 2.96822C17.1825 1.09727 14.6456 0.0449033 11.9996 0.0419922ZM11.9996 14C11.2084 14 10.4351 13.7654 9.77727 13.3259C9.11948 12.8863 8.60679 12.2616 8.30404 11.5307C8.00129 10.7998 7.92207 9.99556 8.07641 9.21963C8.23075 8.44371 8.61172 7.73098 9.17113 7.17157C9.73054 6.61216 10.4433 6.23119 11.2192 6.07685C11.9951 5.92251 12.7994 6.00172 13.5303 6.30448C14.2612 6.60723 14.8859 7.11992 15.3254 7.77771C15.765 8.43551 15.9996 9.20887 15.9996 9.99999C15.9996 11.0609 15.5781 12.0783 14.828 12.8284C14.0778 13.5786 13.0604 14 11.9996 14Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_288_1525">
+                <rect width="24" height="24" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div class="text-wrap ml-5">
+              <h4 class="font-semibold text-bowhead-100 mb-2">
+                Visit our Design Center
+              </h4>
+              <p class="text-sm lg:text-base font-normal text-bowhead-400 mb-2">
+                300 Sannta Monica Blvd., Floor 3 <br>
+                Santa Monica, CA, USA
+              </p>
+            </div>
+          </div>
+          <div class="text-wrap">
             <h4 class="font-semibold text-bowhead-100 mb-2">
               Chat to sales
             </h4>
@@ -194,7 +256,8 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-between items-start mb-12">
+      
+      <div class="lg:flex justify-between items-start mb-12 hidden">
         <div class="text-wrap w-3/12">
           <p class="label-2 font-normal text-bowhead-400 mb-2">
             Our Location
@@ -225,7 +288,7 @@
           </p>
         </div>
       </div>
-      <div class="flex justify-between items-center mb-12">
+      <div class="lg:flex justify-between items-center mb-12 hidden">
         <div class="text-wrap w-3/12">
           <img src="assets/images/logo-bowhead.png" alt="">
         </div>
@@ -239,6 +302,59 @@
           </p>
         </div>
         <div class="text-wrap w-4/12">
+          <h4 class="font-semibold text-bowhead-100 mb-2">
+            Bowhead Health Singapore
+          </h4>
+          <p class="body-2 font-normal text-bowhead-400">
+            1 Raffles Place #40-02 One <br>
+            Raffles Place, Singapore
+          </p>
+        </div>
+      </div>
+
+      <div class="justify-between items-start mb-12 lg:hidden">
+        <div class="text-wrap mb-6 lg:mb-0">
+          <img src="assets/images/logo-bowhead.png" alt="" class=" max-h-16">
+        </div>
+        <div class="text-wrap mb-6 lg:mb-0">
+          <p class="label-2 font-normal text-bowhead-400 mb-2">
+            Our Location
+          </p>
+          <h4 class="font-semibold text-bowhead-100 mb-2">
+            Bowhead Office
+          </h4>
+          <p class="body-2 font-normal text-bowhead-400">
+            Find Us at these location
+          </p>
+        </div>
+        <div class="text-wrap mb-6 lg:mb-0">
+          <h4 class="font-semibold text-bowhead-100 mb-2">
+            Bowhead Canada HQ
+          </h4>
+          <p class="body-2 font-normal text-bowhead-400">
+            210 Barrow Crescent Kanata, <br>
+            Ontario K2L2C7, Canada.
+          </p>
+        </div>
+        <div class="text-wrap mb-6 lg:mb-0">
+          <h4 class="font-semibold text-bowhead-100 mb-2">
+            Bowhead Health USA
+          </h4>
+          <p class="body-2 font-normal text-bowhead-400">
+            300 Santa Monica Blvd., Florr <br>
+            3 Santa Monica, CA, USA
+          </p>
+        </div>
+        <div class="text-wrap mb-6 lg:mb-0">
+          <h4 class="font-semibold text-bowhead-100 mb-2">
+            Bowhead Health Europe
+          </h4>
+          <p class="body-2 font-normal text-bowhead-400">
+            Valgevase tn 11b-8 <br>
+            Tallinn,10414, Estonia
+          </p>
+        </div>
+        <div class="text-wrap">
           <h4 class="font-semibold text-bowhead-100 mb-2">
             Bowhead Health Singapore
           </h4>
