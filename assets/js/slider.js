@@ -75,3 +75,31 @@ const swiper3 = new Swiper('.swiperlogo', {
     }
   }
 });
+
+const swiper4 = new Swiper('.swipertesti', {
+  // Optional parameters
+  direction: 'horizontal',
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  // loopedSlides: 3,
+  loop: true,
+  // autoplay: {
+  //   delay: 5000,
+  // },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});

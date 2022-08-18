@@ -5,101 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/assets/css/styles.css" rel="stylesheet">
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 </head>
-<body>
-  <nav class=" px-2 sm:px-4 py-12 rounded mb-14">
-    <div class="container flex flex-wrap justify-between items-center mx-auto">
-      <a href="#" class="flex items-center">
-          <img src="/assets/images/logo-nav.png" class="mr-3 h-6 sm:h-9" alt="Bowhead Logo">
-          <!-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
-      </a>
-      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_23_19)">
-          <path d="M9 7.19999C9 6.20592 9.80592 5.39999 10.8 5.39999H34.2C35.1941 5.39999 36 6.20592 36 7.19999C36 8.19407 35.1941 8.99999 34.2 8.99999H10.8C9.80592 8.99999 9 8.194 9 7.19999ZM34.2 16.2H1.8C0.805922 16.2 0 17.006 0 18C0 18.9941 0.805922 19.8 1.8 19.8H34.2C35.1941 19.8 36 18.9941 36 18C36 17.006 35.1941 16.2 34.2 16.2ZM34.2 27H18C17.006 27 16.2 27.8059 16.2 28.8C16.2 29.794 17.006 30.6 18 30.6H34.2C35.1941 30.6 36 29.794 36 28.8C36 27.8059 35.1941 27 34.2 27Z" fill="white"/>
-          </g>
-          <defs>
-          <clipPath id="clip0_23_19">
-          <rect width="36" height="36" fill="white"/>
-          </clipPath>
-          </defs>
-          </svg>
-          
-      </button>
-      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul class="flex flex-col p-4 mt-4 rounded-lg border md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
-          <!-- <li>
-            <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
-          </li> -->
-          <li>
-            <div class="">
-              <a href="#" target="_blank" rel="noopener noreferrer" class="text-white font-normal border rounded-full text-sm px-12 py-4 text-center">
-                About
-              </a>
-            </div>
-            <!-- <button type="button" class="text-white font-normal border rounded-full text-sm px-12 py-3 text-center">About</button> -->
-          </li>
-          <li>
-            <div class="">
-              <a href="#" target="_blank" rel="noopener noreferrer" class="px-12 py-4 text-sm font-normal text-white rounded-full bg-gradient-to-r from-[#FCD25C] to-[#FF9A66]">
-                Contact
-              </a>
-            </div>
-            <!-- <button type="button" class="px-12 py-3 text-sm font-normal text-white rounded-full bg-gradient-to-r from-[#FCD25C] to-[#FF9A66]
-            ">Contact</button> -->
-          </li>
-        </ul>
+<body class="body-security">
+  <section class="security lg:mb-44 mb-36">
+    <nav class=" px-2 sm:px-4 py-12 rounded lg:mb-14">
+      <div class="container flex flex-wrap justify-between items-center mx-auto">
+        <a href="#" class="flex items-center">
+            <img src="/assets/images/logo-nav.png" class="mr-3 h-9 sm:h-16" alt="Bowhead Logo">
+            <!-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_23_19)">
+            <path d="M9 7.19999C9 6.20592 9.80592 5.39999 10.8 5.39999H34.2C35.1941 5.39999 36 6.20592 36 7.19999C36 8.19407 35.1941 8.99999 34.2 8.99999H10.8C9.80592 8.99999 9 8.194 9 7.19999ZM34.2 16.2H1.8C0.805922 16.2 0 17.006 0 18C0 18.9941 0.805922 19.8 1.8 19.8H34.2C35.1941 19.8 36 18.9941 36 18C36 17.006 35.1941 16.2 34.2 16.2ZM34.2 27H18C17.006 27 16.2 27.8059 16.2 28.8C16.2 29.794 17.006 30.6 18 30.6H34.2C35.1941 30.6 36 29.794 36 28.8C36 27.8059 35.1941 27 34.2 27Z" fill="white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_23_19">
+            <rect width="36" height="36" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg>
+            
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul class="flex flex-col p-4 mt-4 rounded-lg border md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
+            <!-- <li>
+              <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+            </li> -->
+            <li>
+              <div class="">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="text-white font-normal border rounded-full text-sm px-12 py-4 text-center">
+                  About
+                </a>
+              </div>
+              <!-- <button type="button" class="text-white font-normal border rounded-full text-sm px-12 py-3 text-center">About</button> -->
+            </li>
+            <li>
+              <div class="">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="px-12 py-4 text-sm font-normal text-white rounded-full bg-gradient-to-r from-[#FCD25C] to-[#FF9A66]">
+                  Contact
+                </a>
+              </div>
+              <!-- <button type="button" class="px-12 py-3 text-sm font-normal text-white rounded-full bg-gradient-to-r from-[#FCD25C] to-[#FF9A66]
+              ">Contact</button> -->
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-  <section class="security mb-44">
+    </nav>
     <div class="container">
-      <div class="flex justify-between mb-44">
+      <div class="flex justify-between flex-col-reverse lg:flex-row mb-36 lg:mb-44">
         <div class="text-wrap">
           <h1 class="font-bold text-white mb-9">
-            Your health data rooted in privacy
+            Your health data <br> rooted in privacy
           </h1>
           <p class="body-2 font-normal text-bowhead-200 mb-9">
             We are a healthcare technology company focusing on innovations that guarantee individuals the self-sovereign ownership of their health data.
           </p>
           <a href="#">
-            <button type="button" class="px-12 py-5 text-base font-semibold text-white rounded-full bg-gradient-to-r from-[#FCD25C] to-[#FF9A66]
+            <button type="button" class="lg:px-12 px-6 py-5 text-xs lg:text-base font-semibold text-white rounded-full bg-gradient-to-r from-[#FCD25C] to-[#FF9A66]
             ">Schedule a call with Bowhead Chief Architect</button>
           </a>
         </div>
-        <div class="img-wrap w-6/12">
+        <div class="img-wrap lg:w-6/12 mb-8 lg:mb-0">
           <img src="assets/images/img-dna.png" alt="">
         </div>
       </div>
-      <div class="flex justify-between mb-44">
-        <div class="img-wrap w-6/12">
+      <div class="flex justify-between mb-36 lg:mb-44 flex-col lg:flex-row">
+        <div class="img-wrap lg:w-6/12 mb-8 lg:mb-0">
           <img src="assets/images/img-code.png" alt="">
         </div>
         <div class="text-wrap">
           <h1 class="font-bold text-bowhead-100 mb-9">
-            On-Chain encryption key management
+            On-Chain encryption <br> key management
           </h1>
           <p class="body-2 font-normal text-bowhead-100 mb-9">
             Apple, Google and most apps have full unencrypted access to view your data. Bowhead’s ecosystem gives users their encryption key thus grantig self-sovereign ownership. Only these keys can decrypt the data.
             This is  all verifiable on-chain and open - source.
           </p>
           <a href="#">
-            <button type="button" class="px-12 py-5 text-base font-semibold text-white rounded-full bg-gradient-to-r from-[#FCD25C] to-[#FF9A66]
+            <button type="button" class="lg:px-12 px-6 py-5 text-xs lg:text-base font-semibold text-white rounded-full bg-gradient-to-r from-[#FCD25C] to-[#FF9A66]
             ">Schedule a call with Bowhead Chief Architect</button>
           </a>
         </div>
       </div>
-      <div class="flex justify-between">
+      <div class="flex justify-between flex-col-reverse lg:flex-row">
         <div class="text-wrap">
           <h1 class="font-bold text-bowhead-100 mb-9">
-            Health meets Cryptography
+            Health meets <br> Cryptography
           </h1>
           <p class="body-2 font-normal text-bowhead-100 mb-9">
             Bowhead,s ecosystem leverages Ethereum’s Smart Contracts for data interaction and Interplanetary File System (IPFS) for decentralized storage.
           </p>
           <a href="#">
-            <button type="button" class="px-12 py-5 text-base font-semibold text-white rounded-full bg-gradient-to-r from-[#FCD25C] to-[#FF9A66]
+            <button type="button" class="lg:px-12 px-6 py-5 text-xs lg:text-base font-semibold text-white rounded-full bg-gradient-to-r from-[#FCD25C] to-[#FF9A66]
             ">Schedule a call with Bowhead Chief Architect</button>
           </a>
           <p class="body-2 font-semibold text-bowhead-100 mt-9 mb-1">
@@ -116,42 +117,112 @@
             </div>
           </a>
         </div>
-        <div class="img-wrap w-6/12">
+        <div class="img-wrap lg:w-6/12 mb-8 lg:mb-0">
           <img src="assets/images/img-coin.png" alt="">
         </div>
       </div>
     </div>
   </section>
-  <section class="internal mb-44">
+  <section class="internal lg:mb-44 mb-36">
     <div class="container">
-      <div class="flex justify-between">
-        <div class="text-wrap w-3/12">
-          <h1 class="font-bold text-bowhead-100">
-            Our internal R&D Engine at work
+      <div class="flex justify-between flex-col lg:flex-row">
+        <div class="text-wrap lg:w-3/12">
+          <h1 class="font-bold text-bowhead-100 mb-4 lg:mb-0">
+            Our internal <br> R&D Engine at work
           </h1>
         </div>
-        <div class="text-wrap w-6/12">
+        <div class="text-wrap lg:w-6/12">
           <p class="body-2 font-normal text-bowhead-100 mb-9">
             The science at Bowhead is born from over 50 years of combined peer reviewed research experience in healthcare, biology and data systems. 
           </p>
           <a href="#">
-            <button type="button" class="px-12 py-5 text-base font-semibold text-white rounded-full bg-gradient-to-r from-[#FCD25C] to-[#FF9A66]
+            <button type="button" class="lg:px-12 px-6 py-5 text-xs lg:text-base font-semibold text-white rounded-full bg-gradient-to-r from-[#FCD25C] to-[#FF9A66]
             ">Schedule a call with Bowhead Chief Architect</button>
           </a>
         </div>
       </div>
     </div>
   </section>
-  <section class="slider">
-    <div class="container"></div>
-  </section>
-  <section class="join">
+  <section class="slider lg:mb-44 mb-36">
     <div class="container">
-      <div class="flex justify-between mb-44">
-        <div class="img-wrap w-6/12">
+      <div class="swipertesti overflow-hidden relative pb-12 lg:pb-24">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="testi bg-white text-bowhead-100 lg:py-8 py-4 lg:px-10 px-6 flex flex-col justify-between">
+              <h3 class="font-semibold">
+                Launch of Consent layer and Access Management (CLAM) System
+              </h3>
+              <div>
+                <div class="body-2 font-medium text-bowhead-100 my-5">
+                  2012
+                </div>
+                <div class="flex items-center">
+                  <div class="img-testi mr-6">
+                    <img src="assets/images/testi-1.png" alt="">
+                  </div>
+                  <div class="body-2 font-medium text-bowhead-100">
+                    DR. Istvan Karol
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testi bg-white text-bowhead-100 lg:py-8 py-4 lg:px-10 px-6 flex flex-col justify-between">
+              <h3 class="font-semibold">
+                REACT Native SDK Components
+              </h3>
+              <div>
+                <div class="body-2 font-medium text-bowhead-100 my-5">
+                  2012
+                </div>
+                <div class="flex items-center">
+                  <div class="img-testi mr-6">
+                    <img src="assets/images/testi-1.png" alt="">
+                  </div>
+                  <div class="body-2 font-medium text-bowhead-100">
+                    DR. Istvan Karol
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testi bg-white text-bowhead-100 lg:py-8 py-4 lg:px-10 px-6 flex flex-col justify-between">
+              <h3 class="font-semibold">
+                Blockchain 
+                Explorer
+              </h3>
+              <div>
+                <div class="body-2 font-medium text-bowhead-100 my-5">
+                  2012
+                </div>
+                <div class="flex items-center">
+                  <div class="img-testi mr-6">
+                    <img src="assets/images/testi-1.png" alt="">
+                  </div>
+                  <div class="body-2 font-medium text-bowhead-100">
+                    DR. Istvan Karol
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    
+  </section>
+  <section class="join lg:mb-44 mb-36">
+    <div class="container">
+      <div class="flex justify-between flex-col lg:flex-row">
+        <div class="img-wrap lg:w-6/12 mb-8 lg:mb-0">
           <img src="assets/images/img-team-join.png" alt="">
         </div>
-        <div class="text-wrap w-5/12 flex flex-col justify-center">
+        <div class="text-wrap lg:w-5/12 flex flex-col justify-center">
           <h1 class="font-bold text-bowhead-100 mb-9">
             Join <br>
             Our Team
@@ -163,13 +234,13 @@
       </div>
     </div>
   </section>
-  <section class="footer">
+  <section class="relative pb-14">
     <div class="container">
-      <div class="flex justify-between mb-7">
-        <div class="brand w-24">
+      <div class="flex justify-between mb-7 flex-col lg:flex-row">
+        <div class="brand w-24 mb-14 lg:mb-0">
           <img src="assets/images/img-healthy-habbits.png" alt="">
         </div>
-        <div class="privacy">
+        <div class="privacy mb-14 lg:mb-0">
           <h4 class="font-semibold text-bowhead-100 mb-6">
             Your Privacy Matters to Us
           </h4>
@@ -204,7 +275,7 @@
             </li>
           </ul>
         </div>
-        <div class="product">
+        <div class="product mb-14 lg:mb-0">
           <h4 class="font-semibold text-bowhead-100 mb-6">
             Product
           </h4>
@@ -243,7 +314,7 @@
             </li>
           </ul>
         </div>
-        <div class="company">
+        <div class="company mb-14 lg:mb-0">
           <h4 class="font-semibold text-bowhead-100 mb-6">
             Company
           </h4>
@@ -265,7 +336,7 @@
             </li>
           </ul>
         </div>
-        <div class="connect">
+        <div class="connect mb-14 lg:mb-0">
           <h4 class="font-semibold text-bowhead-100 mb-6">
             Connect
           </h4>
@@ -330,8 +401,8 @@
           </div>
         </a>
       </div>
-      <div class="flex text-lg text-bowhead-100">
-        <div class="address mr-28">
+      <div class="flex lg:text-lg text-base text-bowhead-100 flex-col lg:flex-row">
+        <div class="address lg:mr-28 mb-6 lg:mb-0">
           Bowhead Health Inc. <br>
           120 Barrow Crescent
           Kanata, Ontario, Canada
@@ -346,5 +417,7 @@
 
 
   <script src="/node_modules/flowbite/dist/flowbite.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="assets/js/slider.js"></script>
 </body>
 </html>
